@@ -12,6 +12,12 @@ export class ProductosService {
     this.cargar_productos();
   }
 
+  public cargar_producto( cod:string ){
+    console.log(cod);
+    return this.http.get(`https://junglaanimal-57cc9.firebaseio.com/productos/${ cod }.json`);
+
+  }
+
   public cargar_productos(){
     this.cargando=true;
 
