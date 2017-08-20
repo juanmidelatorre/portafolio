@@ -22,3 +22,9 @@
 .fadeIn {
   animation-name: fadeIn;
 }
+
+/*loading portafolio*/ 
+svg path,
+svg rect{
+  fill: black;
+}
