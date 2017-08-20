@@ -25,7 +25,7 @@ export class InformacionService {
     this.http.get("https://junglaanimal-57cc9.firebaseio.com/equipo.json")
              .subscribe( data => {
               this.cargada_sobre_nosotros=true;
-              console.log(data.json());
+              //console.log(data.json());
               this.equipo=data.json();
             });
   }
